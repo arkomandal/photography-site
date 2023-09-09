@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    // margin-top: 50px;
+}
+
+h1 {
+    width: 160px;
+    margin: 10px auto;
+}
+
+.main {
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+form {
+    display: block;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,15 @@
+<div id="home" class="container">
+    <div class="sub-header-container">
+        <ul>
+            <li><a href="#">Monochromatic</a></li>
+            <li><a href="#">Nature</a></li>
+            <li><a href="#">Film</a></li>
+            <li><a href="#">Street Photography</a></li>
+            <li><a href="#">Animals</a></li>
+        </ul>
+    </div>
+    
+    <div class="card" *ngFor="let item of items">
+        <img [alt]="item" [src]="item">
+    </div>
+</div>

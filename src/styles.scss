@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Open-sans-light;
+    src: url(assets/fonts/Open_Sans/static/OpenSans-Light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Open-sans-light;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    color: #F0EBE3;
+    background: #7D9D9C;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #F0EBE3;
+    background: #7D9D9C;
+}

@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h1 {
+    width: 140px;
+    margin: 10px auto;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+    .photo {
+        width: 40%;
+        text-align: center;
+        overflow: hidden;
+        padding: 30px;
+
+        img {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        width: 40%;
+        padding: 30px;
+    }
+
+}
