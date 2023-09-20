@@ -49,6 +49,7 @@
                   "maximumError": "4kb"
                 }
               ],
+              "baseHref": "/photography-site/dist/",
               "outputHashing": "all"
             },
             "development": {
