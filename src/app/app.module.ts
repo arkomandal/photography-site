@@ -9,7 +9,6 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,9 +24,7 @@ import { APP_BASE_HREF } from '@angular/common';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    { provide: APP_BASE_HREF, useValue: '.' }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
