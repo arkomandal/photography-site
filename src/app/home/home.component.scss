@@ -1,5 +1,7 @@
 .main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(^assets/images/jake-nebov-SXbc-a9BPyM-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(^assets/images/jake-nebov-SXbc-a9BPyM-unsplash.jpg); //the carret symbol (^) is ignored by angular
+    //if the above code doesn't work then apply this. Though it will put a duplicate image in dist root.
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(~src/assets/images/jake-nebov-SXbc-a9BPyM-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
