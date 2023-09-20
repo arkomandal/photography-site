@@ -1,0 +1,135 @@
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/jake-nebov-SXbc-a9BPyM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    // flex-direction: row-reverse;
+    .hero {
+        // margin-top: -5px;
+        margin-left: 20px;
+
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .menu {
+        text-transform: uppercase;
+        margin-right: 25px;
+        margin-top: 10px;
+        line-height: 60px;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-left: 20px;
+
+            a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+
+            a:link,
+            a:visited {
+                border-bottom: 2px solid transparent;
+                transition: border-bottom 0.2s;
+            }
+
+            a:hover,
+            a:active {
+                border-bottom: 2px solid #e67e22;
+            }
+
+        }
+    }
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 300%;
+        word-spacing: 4px;
+        // letter-spacing: 1px;
+
+    }
+
+    h1>span {
+        font-family: Signature;
+        font-size: 50%;
+        text-transform: none;
+        position: absolute;
+        // bottom:5px;
+        left: 120px;
+        color: #ffffff;
+    }
+
+    .btns {
+        margin-top: 70px;
+    }
+
+    .btn:link,
+    .btn:visited {
+        display: inline-block;
+        padding: 10px 30px;
+        font-weight: 300;
+        text-decoration: none;
+        border-radius: 200px;
+        transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+
+    .btn-full:link,
+    .btn-full:visited {
+        background-color: #e67e22;
+        border: 1px solid #e67e22;
+        color: #fff;
+        margin-right: 15px;
+    }
+
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        border: 1px solid #e67e22;
+        color: #e67e22;
+        margin-right: 15px;
+    }
+
+    .btn:hover,
+    .btn:active {
+        background-color: #cf6d17;
+    }
+
+    .btn-full:hover,
+    .btn-full:active {
+        border: 1px solid #cf6d17;
+    }
+
+    .btn-ghost:hover,
+    .btn-ghost:active {
+        border: 1px solid #cf6d17;
+        color: #fff;
+    }
+}

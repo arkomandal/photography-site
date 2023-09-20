@@ -4,7 +4,13 @@
     src: url(assets/fonts/Open_Sans/static/OpenSans-Light.ttf);
 }
 
+@font-face {
+    font-family: Signature;
+    src: url(assets/fonts/just-signature-font/JustSignature-92w7.ttf);
+}
+
 * {
+    box-sizing: border-box; //This makes sure that the padding and border are included in the total width and height of the elements.
     margin: 0;
     padding: 0;
     font-family: Open-sans-light;

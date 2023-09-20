@@ -9,11 +9,11 @@ export class GalleryComponent implements OnInit {
   height: string = "200";
   width: string = "200";
   items: string[] = [];
-  totalItems: number = 48;
+  totalItems: number = 49;
 
   constructor() {
-   
-   }
+
+  }
 
   ngOnInit() {
     let i = 1;
@@ -22,4 +22,5 @@ export class GalleryComponent implements OnInit {
       i++;
     }
   }
+  
 }

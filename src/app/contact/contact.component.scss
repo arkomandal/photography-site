@@ -12,8 +12,9 @@ h1 {
 }
 
 .main {
-    position: relative;
-    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 form {
