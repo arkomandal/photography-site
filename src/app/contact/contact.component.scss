@@ -15,13 +15,60 @@ h1 {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding-top: 20px;
 }
 
 form {
     display: block;
+    width: 300px;
 }
 
 .form-group {
     position: relative;
     margin-bottom: 1rem;
+
+    input[type="text"],
+    input[type="email"] {
+        color: rgb(33, 33, 33);
+        // font-family: Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        // border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 2px solid #a4a4a4;
+        transition: all 0.3s;
+        padding: 10px;
+        margin-bottom: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: 0;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+        border: 2px solid #cf6d17;
+    }
+
+    input[type="submit"] {
+        // font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        width: 100%;
+        background: #e67e22;
+        // border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        margin-top: -4px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    [type="submit"]:hover {
+        background: #cf6d17;
+    }
 }

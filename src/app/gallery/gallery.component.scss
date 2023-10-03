@@ -4,10 +4,11 @@
     display: flex;
     // flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-between;
+    justify-content: center;
+    // align-content: space-between;
     // max-height: 100vh;
-    align-items: flex-end;
+    // align-items: flex-end;
+    gap: 30px 30px;
 }
 
 .card {
@@ -18,7 +19,7 @@
     background-color: #E4DCCF;
     // background-color: #363636;
     overflow: hidden;
-    margin: 5px 0 0 0;
+    // margin: 5px 0 0 0;
 
     img {
         height: 200px;

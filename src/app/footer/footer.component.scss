@@ -1,14 +1,17 @@
 footer {
-    height: 60px;
+    height: 90px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #E4DCCF;
+    div {
+        // padding: 5px;
+        line-height: 30px;;
+        color: rgb(127, 127, 127);
+    }
     a {
         text-decoration: none;
         color: rgb(127, 127, 127);
     }
-}
-
-.demo-images {
-    color: rgb(127, 127, 127);
 }
