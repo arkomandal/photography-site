@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
@@ -6,13 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
+  @ViewChild('gallery', { static: false }) private gallery: ElementRef<HTMLDivElement> | undefined;
+  isTestDivScrolledIntoView: boolean = true;
   height: string = "200";
   width: string = "200";
   items: string[] = [];
   totalItems: number = 49;
 
-  constructor() {
+  @HostListener('window:scroll', ['$event'])
+  isScrolledIntoView() {
+    if (this.gallery) {
+      const rect = this.gallery.nativeElement.getBoundingClientRect();
+      // const topShown = rect.top >= 0;
+      const bottomShown = rect.bottom <= window.innerHeight;
+      // this.isTestDivScrolledIntoView = topShown && bottomShown;
+      this.isTestDivScrolledIntoView = !bottomShown;
+    }
+  }
 
+  constructor() {
   }
 
   ngOnInit() {
@@ -22,5 +34,5 @@ export class GalleryComponent implements OnInit {
       i++;
     }
   }
-  
+
 }
