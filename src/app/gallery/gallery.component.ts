@@ -20,7 +20,7 @@ export class GalleryComponent implements OnInit {
       // const topShown = rect.top >= 0;
       const bottomShown = rect.bottom <= window.innerHeight;
       // this.isTestDivScrolledIntoView = topShown && bottomShown;
-      this.isTestDivScrolledIntoView = !bottomShown;
+      this.isTestDivScrolledIntoView = bottomShown;
     }
   }
 

@@ -11,6 +11,7 @@
     z-index: 2;
     display: flex;
     justify-content: space-between;
+    transition: top 0.3s;
 
     ul {
         list-style-type: none;

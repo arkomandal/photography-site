@@ -1,5 +1,5 @@
 
-<app-header *ngIf="isTestDivScrolledIntoView"></app-header>
+<app-header [display]="isTestDivScrolledIntoView"></app-header>
 <div id="works" class="container" #gallery>
     <div class="card" *ngFor="let item of items">
         <img [alt]="item" [src]="item">
