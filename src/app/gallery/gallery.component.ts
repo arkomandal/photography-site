@@ -12,6 +12,8 @@ export class GalleryComponent implements OnInit {
   width: string = "200";
   items: string[] = [];
   totalItems: number = 49;
+  items2: string[] = [];
+  items3: string[] = [];
 
   @HostListener('window:scroll', ['$event'])
   isScrolledIntoView() {
@@ -30,7 +32,12 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
     let i = 1;
     while (i <= this.totalItems) {
+      if(i<=10)
       this.items.push(`https://source.unsplash.com/random/?Animals&${i}`);
+      if(i>10 && i<=20)
+      this.items2.push(`https://source.unsplash.com/random/?Animals&${i}`);
+      if(i>20 && i<=30)
+      this.items3.push(`https://source.unsplash.com/random/?Animals&${i}`);
       i++;
     }
   }

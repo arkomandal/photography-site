@@ -1,7 +1,32 @@
-
 <app-header [display]="isTestDivScrolledIntoView"></app-header>
-<div id="works" class="container" #gallery>
+<!-- <div id="works" class="container" #gallery>
     <div class="card" *ngFor="let item of items">
         <img [alt]="item" [src]="item">
+    </div>
+</div> -->
+<!-- <div class="container">
+    <ul class="image-gallery">
+        <li *ngFor="let item of items">
+            <img [alt]="item" [src]="item">
+      </li>
+    </ul>
+  </div> -->
+<div class="container"  #gallery>
+    <div class="image-gallery">
+        <div class="column">
+            <div class="image-item" *ngFor="let item of items">
+                <img [alt]="item" [src]="item">
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-item" *ngFor="let item of items2">
+                <img [alt]="item" [src]="item">
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-item" *ngFor="let item of items3">
+                <img [alt]="item" [src]="item">
+            </div>
+        </div>
     </div>
 </div>
