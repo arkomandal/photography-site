@@ -67,6 +67,8 @@ form {
         font-weight: 700;
         margin-bottom: 20px;
         text-transform: uppercase;
+        -webkit-appearance: none;
+        appearance: none;
     }
 
     [type="submit"]:hover {
