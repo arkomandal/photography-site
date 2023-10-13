@@ -7,10 +7,18 @@
     // background-color: beige;
 }
 
-h1 {
-    width: 150px;
-    margin: 10px auto;
+.heading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    h1 {
+        // width: 150px;
+        margin: 10px auto;
+        // text-transform: uppercase;
+    }
 }
+
 
 .main {
     display: flex;
@@ -22,7 +30,7 @@ h1 {
         width: 620px;
         text-align: center;
         overflow: hidden;
-        padding: 30px 30px 10px 30px;
+        padding: 20px;
 
         img {
             height: 350px;
@@ -34,10 +42,41 @@ h1 {
 
     .content {
         width: 620px;
-        padding: 30px 30px 10px 30px;
+        padding: 20px;
+
         p {
-            line-height: 24px;;
+            line-height: 24px;
         }
     }
 
+}
+
+@media (min-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+}
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (max-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    .main > .photo {
+        padding: 20px 10px 10px 10px;
+    }
+    .main > .content {
+        padding: 5px 10px 20px 10px;
+    }
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
 }

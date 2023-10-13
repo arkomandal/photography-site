@@ -60,12 +60,18 @@
     }
 }
 
+.temp {
+    display: flex;
+}
+
 .hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 170px;
+    // margin-left: 150px;
+    // position: absolute;
+    // width: 1140px;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 
     h1 {
         font-weight: 300;
@@ -133,5 +139,105 @@
     .btn-ghost:active {
         border: 1px solid #cf6d17;
         color: #fff;
+    }
+}
+
+
+@media (max-width:961px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .main {
+        background-attachment: initial;
+    }
+
+    .temp {
+        display: flex;
+    }
+
+    .hero-text-box {
+        margin-top: 100px;
+        margin-left: 30px;
+        // position: absolute;
+        // width: 1140px;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 200%;
+            word-spacing: 4px;
+            // letter-spacing: 1px;
+
+        }
+
+        h1>span {
+            font-family: Signature;
+            font-size: 50%;
+            text-transform: none;
+            position: absolute;
+            // bottom:5px;
+            left: 120px;
+            color: #ffffff;
+        }
+
+        .btns {
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-content: flex-start;
+        }
+
+        .btn {
+            margin-bottom: 10px;
+            // width: 100px;
+        }
+
+        .btn:link,
+        .btn:visited {
+            display: inline-block;
+            padding: 10px 30px;
+            font-weight: 300;
+            text-decoration: none;
+            border-radius: 200px;
+            transition: background-color 0.2s, border 0.2s, color 0.2s;
+        }
+
+        .btn-full:link,
+        .btn-full:visited {
+            background-color: #e67e22;
+            border: 1px solid #e67e22;
+            color: #fff;
+            margin-right: 15px;
+        }
+
+        .btn-ghost:link,
+        .btn-ghost:visited {
+            border: 1px solid #e67e22;
+            color: #e67e22;
+            margin-right: 15px;
+        }
+
+        .btn:hover,
+        .btn:active {
+            background-color: #cf6d17;
+        }
+
+        .btn-full:hover,
+        .btn-full:active {
+            border: 1px solid #cf6d17;
+        }
+
+        .btn-ghost:hover,
+        .btn-ghost:active {
+            border: 1px solid #cf6d17;
+            color: #fff;
+        }
     }
 }

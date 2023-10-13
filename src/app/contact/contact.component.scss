@@ -6,9 +6,13 @@
     // margin-top: 50px;
 }
 
-h1 {
-    width: 160px;
-    margin: 10px auto;
+.heading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    h1 {
+        margin: 10px auto;
+    }
 }
 
 .main {
