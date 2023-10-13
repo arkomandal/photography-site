@@ -37,6 +37,7 @@ form {
         line-height: 22px;
         background-color: transparent;
         border: 2px solid #a4a4a4;
+        border-radius: 5px;
         transition: all 0.3s;
         padding: 10px;
         margin-bottom: 5px;
@@ -54,7 +55,7 @@ form {
         // font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         width: 100%;
         background: #e67e22;
-        // border-radius: 5px;
+        border-radius: 5px;
         border: 0;
         cursor: pointer;
         color: white;
