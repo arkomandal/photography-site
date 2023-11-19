@@ -66,14 +66,16 @@
 
 .hero-text-box {
     margin-top: 170px;
-    // margin-left: 150px;
-    // position: absolute;
+    margin-left: 150px;
+    position: relative;
     // width: 1140px;
     // top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%);
 
     h1 {
+        // position: absolute;
+        // margin-left: 150px;
         font-weight: 300;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -155,9 +157,9 @@
     }
 
     .hero-text-box {
-        margin-top: 100px;
+        margin-top: 170px;
         margin-left: 30px;
-        // position: absolute;
+        position: relative;
         // width: 1140px;
         // top: 50%;
         // left: 50%;
@@ -182,7 +184,7 @@
             text-transform: none;
             position: absolute;
             // bottom:5px;
-            left: 120px;
+            left: 90px;
             color: #ffffff;
         }
 
@@ -196,7 +198,9 @@
 
         .btn {
             margin-bottom: 10px;
-            // width: 100px;
+            width: 120px;
+            text-align: center;
+            align-self: flex-start;
         }
 
         .btn:link,
@@ -240,4 +244,34 @@
             color: #fff;
         }
     }
+}
+
+
+
+
+
+
+@media (max-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+   
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
 }
